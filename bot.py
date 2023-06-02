@@ -22,8 +22,8 @@ username = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.
 password = WebDriverWait(driver, 10).until(
     EC.visibility_of_element_located((By.XPATH, "//input[@name='session_password']")))
 
-username.send_keys('avkhero4pc@gmail.com')
-password.send_keys('Peter#2004#@')
+username.send_keys('enter the mail id')
+password.send_keys('enter ur password ')
 
 submit_button = WebDriverWait(driver, 10).until(
     EC.element_to_be_clickable((By.XPATH, "//button[@type='submit']"))
