@@ -30,7 +30,7 @@ submit_button = WebDriverWait(driver, 10).until(
 
 submit_button.click()
 #*************** ADD CONTACTS**************************
-driver.get('https://www.linkedin.com/search/results/people/?network=%5B%22S%22%5D&origin=FACETED_SEARCH&page=7&sid=JMV')
+driver.get('https://www.linkedin.com/search/results/people/?network=%5B%22S%22%5D&origin=FACETED_SEARCH&page=11&sid=JMV')
 time.sleep(2)
 all_buttons = driver.find_elements(By.TAG_NAME, "button")
 connect_btns = [btn for btn in all_buttons if btn.text == "Connect"]
